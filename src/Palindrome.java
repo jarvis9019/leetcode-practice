@@ -9,9 +9,7 @@ public class Palindrome {
 
         while (x > 0) {
             reversed = reversed * 10 + x % 10;
-            System.out.println("reversed: "+reversed);
             x /= 10;
-            System.out.println("x: "+x);
         }
 
         return original == reversed;
