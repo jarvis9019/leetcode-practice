@@ -2,17 +2,18 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public static int[] twoSum(int[] nums, int target){
-        Map<Integer,Integer> numsMap = new HashMap<>();
-        for(int i=0; i<= nums.length;i++){
-            if(!numsMap.containsKey(target-nums[i])){
-                numsMap.put(nums[i],i);
-            }else{
-                int[] j = {i,numsMap.get(target-nums[i])};
+    public static int[] twoSum(int[] nums, int target) {
+
+        Map<Integer, Integer> numsMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            if (numsMap.containsKey(target - nums[i])) {
+                int[] j = {numsMap.get(target - nums[i]), i};
                 return j;
+            } else {
+                numsMap.put(nums[i], i);
             }
         }
-        return nums;
+        return null;
     }
 
     public static void main(String[] args){

@@ -3,6 +3,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LongestCommonPrefix {
+
     public static String longestCommonPrefix(String[] strs) {
 
         /*StringBuilder sb = new StringBuilder();
@@ -33,6 +34,9 @@ public class LongestCommonPrefix {
 
     }
 
+        /**
+         * Example usage of longestCommonPrefix
+         */
     public static void main(String[] args){
         System.out.println(longestCommonPrefix(new String[]{"flower", "flow", "floght"}));
     }
